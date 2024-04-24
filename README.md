@@ -14,7 +14,7 @@ publishing them on [Thunderstore](https://thunderstore.io/).
 ## Setup
 
 - Create a new GitHub repository to host your mod.
-- Download [hades2-mod-template.zip](https://github.com/SGG-Modding/Hades2ModTemplate/releases/latest/download/hades2-mod-template.zip) and extract it.
+- Download [**hades2-mod-template.zip**](https://github.com/SGG-Modding/Hades2ModTemplate/releases/latest/download/hades2-mod-template.zip) and extract it.
 - Edit the following as needed:
   - `README.md`: everything about your mod (name, features, etc.).
   - `LICENSE`: the [MIT license](https://choosealicense.com/licenses/mit/) is shipped by default.
@@ -68,6 +68,6 @@ Hack away, and [**release**](#release) when ready.
 ### Dry-run
 
 - If you leave the version input blank, the workflow will do a dry-run.
-- In this mode, a Thunderstore mod package is immediately built of the current state of the chosen branch, and uploaded to the workflow run as an artifact.
+- In this mode, a Thunderstore mod package is immediately built off the current state of the chosen branch, and uploaded to the workflow run as an artifact.
   - The changelog is not rotated, no tagging happens, no GitHub release is made, no publishing to the Thunderstore.
 - This can be used to inspect the Thunderstore package without publishing (e.g. if you are making changes to `thunderstore.toml`).
