@@ -1,0 +1,11 @@
+# Use LF as default EOL marker
+* text=auto eol=lf
+
+# Exclude files from 'git archive'
+.gitattributes export-ignore
+.github export-ignore
+.gitignore export-ignore
+.gitmodules export-ignore
+
+# Git LFS
+*.png filter=lfs diff=lfs merge=lfs -text

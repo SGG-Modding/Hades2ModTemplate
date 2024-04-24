@@ -1,0 +1,40 @@
+[config]
+schemaVersion = "0.0.1"
+
+
+[package]
+namespace = "AuthorName"
+name = "ModName"
+versionNumber = "0.0.0"
+description = "Allows to do some super duper thing."
+websiteUrl = "https://github.com/AuthorName/ModName"
+containsNsfwContent = false
+
+[package.dependencies]
+SGG_Modding-ModUtil = "0.0.1"
+
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "./CHANGELOG.md"
+
+[[build.copy]]
+source = "./LICENSE"
+target = "./LICENSE"
+
+[[build.copy]]
+source = "./src"
+target = "./"
+
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "hades-ii", ]
+
+[publish.categories]
+hades-ii = [ "mods", ]
