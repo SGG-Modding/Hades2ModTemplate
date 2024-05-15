@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.4.0] - 2024-05-15
 
+### Changed
+
+- Swap tagging / publishing steps in release workflow so that no tagging happens until we're sure it's published.
+
 ### Fixed
 
 - Fix release workflow failing to publish due to not properly picking up the built package name.
