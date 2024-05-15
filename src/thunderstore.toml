@@ -33,7 +33,7 @@ target = "./LICENSE"
 
 [[build.copy]]
 source = "./src"
-target = "./"
+target = "./plugins"
 
 
 [publish]
