@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add warning in release workflow if tag format is invalid, rather than fail silently.
+
+### Fixed
+
+- Require tag to be set when trying to run the release workflow.
+
 ## [0.2.0] - 2024-05-14
 
 ### Changed

@@ -6,6 +6,7 @@ on:
     inputs:
       tag:
         description: "Tag / Version number"
+        required: true
       is-dry-run:
         description: "Dry-run (do not publish, only test build)"
         type: boolean
@@ -26,7 +27,10 @@ jobs:
     steps:
       - name: Check input tag format
         run: |
-          echo "${{ inputs.tag }}" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$'
+          if ! echo "${{ inputs.tag }}" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error title=Invalid package version number::Version numbers must follow the Major.Minor.Patch format (e.g. 1.45.320)."
+            exit 1
+          fi
 
       - name: Checkout files
         uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f
