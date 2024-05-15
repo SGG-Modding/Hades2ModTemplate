@@ -1,5 +1,5 @@
-local mod = ModUtil.Mod.Register("ModName")
-
-mod.Config = {
-  Enabled = true,
+return {
+  version = 0;
+  enabled = true;
+  message = 'Hello World!';
 }
