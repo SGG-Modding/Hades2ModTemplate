@@ -54,7 +54,7 @@ jobs:
           tcli build
           ARTIFACT_NAME=$(find "${{ env.build-dir }}" -type f -printf "%f\n")
           echo "artifact-name=${ARTIFACT_NAME}" >> "$GITHUB_ENV"
-          echo "artifact-path=${{ env.build-dir }}/${{ env.artifact-name }}" >> "$GITHUB_ENV"
+          echo "artifact-path=${{ env.build-dir }}/${ARTIFACT_NAME}" >> "$GITHUB_ENV"
 
       - name: Upload artifact to workflow
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
@@ -62,6 +62,12 @@ jobs:
           name: ${{ env.artifact-name }}
           path: ${{ env.artifact-path }}
           retention-days: 1
+
+      - name: Publish package
+        if: ${{ !inputs.is-dry-run }}
+        env:
+          TCLI_AUTH_TOKEN: ${{ secrets.TCLI_AUTH_TOKEN }}
+        run: tcli publish --file ${{ env.artifact-path }}
 
       - name: Tag and push to repository
         if: ${{ !inputs.is-dry-run }}
@@ -72,12 +78,6 @@ jobs:
           git commit --message "Release ${{ inputs.tag }}"
           git tag ${{ inputs.tag }}
           git push origin HEAD:${{ github.ref_name }} --tags
-
-      - name: Publish package
-        if: ${{ !inputs.is-dry-run }}
-        env:
-          TCLI_AUTH_TOKEN: ${{ secrets.TCLI_AUTH_TOKEN }}
-        run: tcli publish --file ${{ env.artifact-path }}
 
       - name: Create release
         id: release

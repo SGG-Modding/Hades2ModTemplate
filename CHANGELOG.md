@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix release workflow failing to publish due to not properly picking up the built package name.
+
 ## [0.3.0] - 2024-05-15
 
 ### Added
