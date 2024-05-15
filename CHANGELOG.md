@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2024-05-15
+
 ### Changed
 
 - Default template is now a valid example plugin
@@ -43,7 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.4.0...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.5.0...HEAD
+[0.5.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.1.0...0.2.0
