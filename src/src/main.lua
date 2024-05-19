@@ -1,3 +1,4 @@
+---@meta _
 -- grabbing our dependencies,
 -- these funky (---@) comments are just there
 --	 to help VS Code find the definitions of things
@@ -30,8 +31,8 @@ chalk = mods["SGG_Modding-Chalk"]
 reload = mods['SGG_Modding-ReLoad']
 
 ---@module 'config'
-config = chalk.auto_lua_toml() 
--- ^ this updates our config.toml in the config folder!
+config = chalk.auto 'config.lua'
+-- ^ this updates our `.cfg` file in the config folder!
 public.config = config -- so other mods can access our config
 
 local function on_ready()
