@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added dedicated `ready` and `reload` files so `main.lua` can be ignored for simple mods.
+- Added a stub `defs.lua` as a reminder to document the plugin if relevant.
+
+### Changed
+
+- Default template is more up-to-date.
+
 ## [0.5.1] - 2024-05-15
 
 ### Fixed

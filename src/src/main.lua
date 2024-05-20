@@ -1,80 +1,58 @@
----@module 'SGG_Modding-ENVY'
-local envy = rom.mods['SGG_Modding-ENVY']
+---@meta _
+-- grabbing our dependencies,
+-- these funky (---@) comments are just there
+--	 to help VS Code find the definitions of things
+
+---@diagnostic disable-next-line: undefined-global
+local mods = rom.mods
 
 ---@module 'SGG_Modding-ENVY-auto'
-envy.auto(); _ENV = private
+mods['SGG_Modding-ENVY'].auto()
+-- ^ this gives us `public` and `import`, among others
+--	and makes all globals we define private to this plugin.
+---@diagnostic disable: lowercase-global
 
----@module 'SGG_Modding-ReLoad'
-local reload = rom.mods['SGG_Modding-ReLoad']
-local loader = reload.auto_multiple()
-
----@module 'SGG_Modding-Chalk'
-local chalk = rom.mods["SGG_Modding-Chalk"]
+---@diagnostic disable-next-line: undefined-global
+rom = rom
+---@diagnostic disable-next-line: undefined-global
+_PLUGIN = PLUGIN
 
 ---@module 'SGG_Modding-Hades2GameDef-Globals'
-local game = rom.game
+game = rom.game
 
 ---@module 'SGG_Modding-SJSON'
-local sjson = rom.mods['SGG_Modding-SJSON']
-
+sjson = mods['SGG_Modding-SJSON']
 ---@module 'SGG_Modding-ModUtil'
-local modutil = rom.mods['SGG_Modding-ModUtil']
+modutil = mods['SGG_Modding-ModUtil']
+
+---@module 'SGG_Modding-Chalk'
+chalk = mods["SGG_Modding-Chalk"]
+---@module 'SGG_Modding-ReLoad'
+reload = mods['SGG_Modding-ReLoad']
 
 ---@module 'config'
-local config = chalk.auto_lua_toml()
-public.config = config
+config = chalk.auto 'config.lua'
+-- ^ this updates our `.cfg` file in the config folder!
+public.config = config -- so other mods can access our config
 
-local function on_ready_setup()
+local function on_ready()
 	-- what to do when we are ready, but not re-do on reload.
+	if config.enabled == false then return end
 	
-	if not config.enabled then return end
-	
-	local file = rom.path.combine(rom.paths.Content, 'Game/Text/en/ShellText.en.sjson')
-
-	sjson.hook(file, function(...)
-		return private.sjson_ShellText(...)
-	end)
+	import 'ready.lua'
 end
 
-local function on_ready_final()
-	-- what to do when we are ready, but not re-do on reload.
-
-	if not config.enabled then return end
-	
-	modutil.mod.Path.Wrap("SetupMap", function(base, ...)
-		return private.wrap_SetupMap(base, ...)
-	end)
-	
-	game.OnControlPressed({'Gift', function(...)
-		return private.trigger_Gift(...)
-	end})
-end
-
-local function on_reload_setup()
+local function on_reload()
 	-- what to do when we are ready, but also again on every reload.
 	-- only do things that are safe to run over and over.
 	
-	function private.sjson_ShellText(data)
-		for _,v in ipairs(data.Texts) do
-			if v.Id == 'MainMenuScreen_PlayGame' then
-				v.DisplayName = 'Test ' .. _PLUGIN.guid
-				break
-			end
-		end
-	end
-
-	function private.wrap_SetupMap(base)
-		print('Map is loading, here we might load some packages.')
-		return base()
-	end
-
-	function private.trigger_Gift()
-		modutil.mod.Hades.PrintOverhead(config.message)
-	end
+	import 'reload.lua'
 end
 
-loader.load('plugin is ready', on_ready_setup, on_reload_setup)
+-- this allows us to limit certain functions to not be reloaded.
+local loader = reload.auto_single()
 
+-- this runs only when modutil and the game's lua is ready
 modutil.on_ready_final(function()
-	loader.load('game is ready', on_ready_final)
+	loader.load(on_ready, on_reload)
 end)
