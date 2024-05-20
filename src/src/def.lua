@@ -7,6 +7,6 @@ local public = {}
 --	---@param a integer helpful description
 --	---@param b string helpful description
 --	---@return table c helpful description
---	function public.do_stuff(a, b)
+--	function public.do_stuff(a, b) end
 
 return public
