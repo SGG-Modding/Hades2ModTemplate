@@ -13,8 +13,9 @@ sjson.hook(file, function(data)
 	return sjson_ShellText(data)
 end)
 
-modutil.mod.Path.Wrap("SetupMap", function(base)
-	return wrap_SetupMap(base)
+modutil.mod.Path.Wrap("SetupMap", function(base, ...)
+	prefix_SetupMap()
+	return base(...)
 end)
 
 game.OnControlPressed({'Gift', function()

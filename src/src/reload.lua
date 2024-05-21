@@ -14,10 +14,9 @@ function sjson_ShellText(data)
 	end
 end
 
-function wrap_SetupMap(base)
+function prefix_SetupMap()
 	print('Map is loading, here we might load some packages.')
-	-- game.LoadPackages({Name = package_name_string})
-	return base()
+	-- LoadPackages({Name = package_name_string})
 end
 
 function trigger_Gift()
