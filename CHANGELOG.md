@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Template imports the game globals as a fallback.
+
+### Fixed
+
+- Fixed typo when defining `_PLUGIN` in the template.
+
 ## [0.6.0] - 2024-05-20
 
 ### Added

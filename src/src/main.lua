@@ -15,10 +15,13 @@ mods['SGG_Modding-ENVY'].auto()
 ---@diagnostic disable-next-line: undefined-global
 rom = rom
 ---@diagnostic disable-next-line: undefined-global
-_PLUGIN = PLUGIN
+_PLUGIN = _PLUGIN
 
----@module 'SGG_Modding-Hades2GameDef-Globals'
+-- get definitions for the game's globals
+---@module 'game'
 game = rom.game
+---@module 'game-import'
+import_as_fallback(game)
 
 ---@module 'SGG_Modding-SJSON'
 sjson = mods['SGG_Modding-SJSON']
