@@ -17,7 +17,7 @@ permissions:
 env:
   changelog: CHANGELOG.md
   thunderstore-config: thunderstore.toml
-  build-dir: build/
+  build-dir: build
   artifact-content-type: application/zip
 
 jobs:
