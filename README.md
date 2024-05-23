@@ -21,7 +21,7 @@ This mod template can be used as basis for creating your own Hades II mods and p
   - `icon.png`: your Thunderstore mod icon.
   - `thunderstore.toml`: your Thunderstore mod package definition (it will be used to generate your package's `manifest.json`). Edit the following entries as needed:
     - `namespace`: your Thunderstore team / namespace, a.k.a. author name.
-    - `name`: your mod name.
+    - `name`: your mod name. No spaces (allowed characters: `a-z A-Z 0-9 _`). Underscores get replaced with a space for display purposes on the website and mod manager. **Important:** this can not be changed later, aside from creating a new package.
     - `description`: short description of your mod (max 250 characters). It will be used by the Thunderstore search, so make sure to include words that people are likely to search for when looking for your mod.
     - `websiteUrl`: your GitHub repository (or website, or Discord server, if you prefer).
     - `[package.dependencies]`: your mod dependencies. Use the `AuthorName-ModName = "X.Y.Z"` format, with `X.Y.Z` being the version you depend on.
