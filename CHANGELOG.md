@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Use annotated tags instead of lightweight tags in release workflow.
+
 ## [0.6.1] - 2024-05-23
 
 ### Changed
