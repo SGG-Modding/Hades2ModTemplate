@@ -9,11 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Use annotated tags instead of lightweight tags in release workflow.
+
+## [0.6.1] - 2024-05-23
+
+### Changed
+
 - Template imports the game globals as a fallback.
 
 ### Fixed
 
 - Fixed typo when defining `_PLUGIN` in the template.
+- Fixed a minor issue with the release workflow.
 
 ## [0.6.0] - 2024-05-20
 
@@ -70,7 +77,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.0...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.1...HEAD
+[0.6.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.0...0.6.1
 [0.6.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.5.1...0.6.0
 [0.5.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.5.0...0.5.1
 [0.5.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.4.0...0.5.0
