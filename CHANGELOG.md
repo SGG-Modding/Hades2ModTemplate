@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Template uses ModUtil `4.0.0` and `once_loaded.game` instead of `on_ready_final`.
 - Use annotated tags instead of lightweight tags in release workflow.
 
 ## [0.6.1] - 2024-05-23

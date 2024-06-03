@@ -56,6 +56,6 @@ end
 local loader = reload.auto_single()
 
 -- this runs only when modutil and the game's lua is ready
-modutil.on_ready_final(function()
+modutil.once_loaded.game(function()
 	loader.load(on_ready, on_reload)
 end)
