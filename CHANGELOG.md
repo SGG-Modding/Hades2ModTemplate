@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.2] - 2024-06-07
+
 ### Changed
 
 - Template uses ModUtil `4.0.0` and `once_loaded.game` instead of `on_ready_final`.
@@ -78,7 +80,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.1...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.2...HEAD
+[0.6.2]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.1...0.6.2
 [0.6.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.0...0.6.1
 [0.6.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.5.1...0.6.0
 [0.5.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.5.0...0.5.1
