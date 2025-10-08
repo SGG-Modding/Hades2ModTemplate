@@ -2,6 +2,8 @@
 
 This mod template can be used as basis for creating your own Hades II mods and publishing them on [Thunderstore](https://thunderstore.io/).
 
+Many mod-making guides and other knowledge can be found on the [Hades II Mod Wiki](https://sgg-modding.github.io/Hades2ModWiki/).
+
 ## Prerequisites
 
 - Basic git knowledge.
