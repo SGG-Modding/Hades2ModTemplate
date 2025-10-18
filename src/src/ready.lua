@@ -23,9 +23,11 @@ game.OnControlPressed({'Gift', function()
 end})
 
 
--- Everything below this line, and the .pkg files in the /data folder, are part of the
--- example mod creation guide which you can find on our wiki, replacing Schelemeus portrait:
+-- Everything below this line is part of the example mod creation guide,
+-- which you can find on our wiki, replacing Schelemeus portrait:
 -- https://sgg-modding.github.io/Hades2ModWiki/docs/category/creating-your-first-mod
+-- Note that the custom .pkg files are not included in the template, and you will
+-- need to create them yourself if you want to follow the tutorial.
 
 -----------------------------------------------------------
 --------------- Step 1: Loading the package ---------------
