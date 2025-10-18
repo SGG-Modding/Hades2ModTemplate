@@ -1,2 +1,12 @@
-# Thunderstore CLI build output
-build/
+# For files used only by a symlink to the ReturnOfModding plugins folder
+/src/LICENSE
+/src/icon.png
+/src/manifest.json
+
+# For source files used to build packages
+/packages
+
+# For build artifacts created by the Thunderstore CLI
+/build
+# For the Thunderstore CLI executable itself, if you include it in your root folder
+tcli.exe
