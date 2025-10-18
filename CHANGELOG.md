@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- The template now contains code snippets from the mod creation guide on the [wiki](https://sgg-modding.github.io/Hades2ModWiki/docs/category/creating-your-first-mod).
+- Bumped the default dependency versions to be compatible with Hades II 1.0.
+
 ## [0.6.2] - 2024-06-07
 
 ### Changed
