@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "AuthorName"
 name = "ModName"
-versionNumber = "0.0.0"
+versionNumber = "0.0.1"
 description = "Allows to do some super duper thing."
 websiteUrl = "https://github.com/AuthorName/ModName"
 containsNsfwContent = false
