@@ -41,7 +41,7 @@ That's it, you are now ready to [**develop**](#develop).
 
 ## Develop
 
-- **[WIP]** This is where we should point at documentation on how to develop the mod (e.g. how to hot reload / build, how to test).
+- For a guided start of how to set up your first mod, take a loook at the [Developing your first mod](https://sgg-modding.github.io/Hades2ModWiki/docs/category/creating-your-first-mod) guides on the Hades II Mod wiki.
 - Make sure to continuously update the `README.md` and `CHANGELOG.md` files as you add, change, or remove features.
   - This ensures you won't forget to document them.
   - For good practices on changelog maintenance, please see [Keep a Changelog](https://keepachangelog.com/).
