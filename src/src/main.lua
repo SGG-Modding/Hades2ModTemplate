@@ -80,7 +80,7 @@ modutil.once_loaded.game(function()
 end)
 
 -- again but loaded later than other mods
-rom.on_all_mods_loaded(function()
+mods.on_all_mods_loaded(function()
 	modutil.once_loaded.game(function()
 		loader.load("late", on_ready_late, on_reload_late)
 	end)
