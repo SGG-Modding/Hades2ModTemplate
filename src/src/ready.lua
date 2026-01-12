@@ -38,7 +38,15 @@ end})
 --   if game.CurrentHubRoom.Name == "Hub_PreRun" then
 --     mod.LoadSkellyPackage()
 --     end
---   base(source, args)
+--   return base(source, args)
+-- end)
+
+-- -- If returning from a Chaos Trial, HubPostBountyLoad will be called instead of DeathAreaRoomTransition, so we need to duplicate the wrap
+-- modutil.mod.Path.Wrap("HubPostBountyLoad", function(base, source, args)
+--   if game.CurrentHubRoom.Name == "Hub_PreRun" then
+--     mod.LoadSkellyPackage()
+--   end
+--   return base(source, args)
 -- end)
 
 

@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.7.1] - 2025-10-23
 
+### Changed
+
+- The template now also handles an edge case where `DeathAreaRoomTransition` is not called when returning from a Chaos Trial in it's example code snippet.
+
 ### Fixed
 
 - The template now properly uses `LuaENVY-ENVY` instead of the deprecated `SGG_Modding-ENVY` dependency.
