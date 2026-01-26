@@ -56,6 +56,7 @@ Hack away, and [**release**](#release) when ready.
   - By default, your repository's default branch (`main` by default) is selected (this is why we recommended for planning on making releases from it). If you want to release from another branch, select it.
 - Input the version to release, e.g. `1.2.0`.
   - For good practices on versioning, please see [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+  - If you have images or screenshots that you use in your `README.md`, input the name of the directory containing them in the `image-folder-name` field (default is `images`). Any relative image paths in the `README.md` pointing to that directory will be converted to absolute paths so that they render correctly on Thunderstore, such as in `![Sample Image](./images/sample_image.png)`. Thunderstore requires full URLs for images to render properly.
 - Click the **Run workflow** button.
 - A new workflow run will be triggered, and will take care of:
   - Rotating version in `CHANGELOG.md` and `thunderstore.toml`.
