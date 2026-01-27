@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- New lua files `ready_late.lua` and `reload_late.lua` that are loaded after H2M plugins are loaded.
+
+### Changed
 - Updated the release pipeline to automatically convert relative image paths in the README to absolute paths.
 
 ## [0.7.1] - 2025-10-23
