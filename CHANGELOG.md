@@ -7,10 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-01-27
+
 ### Added
+
 - New lua files `ready_late.lua` and `reload_late.lua` that are loaded after H2M plugins are loaded.
 
 ### Changed
+
 - Updated the release pipeline to automatically convert relative image paths in the README to absolute paths.
 
 ## [0.7.1] - 2025-10-23
@@ -103,7 +107,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.7.1...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.8.0...HEAD
+[0.8.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.7.1...0.8.0
 [0.7.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.7.0...0.7.1
 [0.7.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.2...0.7.0
 [0.6.2]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.6.1...0.6.2
