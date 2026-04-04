@@ -23,6 +23,7 @@ env:
   thunderstore-config: thunderstore.toml
   build-dir: build
   artifact-content-type: application/zip
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   release:
@@ -37,14 +38,15 @@ jobs:
           fi
 
       - name: Checkout files
-        uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           lfs: true
 
       - name: Rotate unreleased section in changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@77ac767b2f7f6edf2ee72ab3364ed26667086f96
+        uses: baynezy/ChangeLogger.Action@6e3ad430f08e13698bb01027a13ba4349b0143cc
         with:
           tag: ${{ inputs.tag }}
+          log-path: ${{ env.changelog }}
 
       - name: Rotate version in Thunderstore CLI config
         run: |
@@ -65,7 +67,7 @@ jobs:
           echo "artifact-path=${{ env.build-dir }}/${ARTIFACT_NAME}" >> "$GITHUB_ENV"
 
       - name: Upload artifact to workflow
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
         with:
           name: ${{ env.artifact-name }}
           path: ${{ env.artifact-path }}
