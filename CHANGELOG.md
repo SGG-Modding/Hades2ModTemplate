@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.1] - 2026-04-05
+
 ## [0.9.0] - 2026-04-04
 
 ## [0.8.0] - 2026-01-27
@@ -109,7 +111,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.0...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.1...HEAD
+[0.9.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.0...0.9.1
 [0.9.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.8.0...0.9.0
 [0.8.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.7.1...0.8.0
 [0.7.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.7.0...0.7.1
