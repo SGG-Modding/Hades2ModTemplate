@@ -58,6 +58,18 @@ jobs:
       - name: Install Thunderstore CLI
         run: dotnet tool install -g tcli
 
+      # Use this action instead of the above in case your mod has soft dependencies. 
+      # More info here: https://sgg-modding.github.io/Hades2ModWiki/docs/creating-mods/first-mod-guide/mod-template#packagerom_soft_deps
+      # - name: Install Thunderstore CLI
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     gh release download 0.3.3-hades2 \
+      #       --repo adi1998/thunderstore-cli \
+      #       --pattern "*linux-x64.tar.gz"
+      #     tar xvf tcli-0.3.3-hades2-linux-x64.tar.gz
+      #     echo "$PWD/tcli-0.3.3-hades2-linux-x64" >> "$GITHUB_PATH"
+
       - name: Build package
         run: |
           tcli build
