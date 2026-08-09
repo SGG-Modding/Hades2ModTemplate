@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.0] - 2026-08-09
+
 ### Changed
 
 - Added support for optional dependencies through `[package.rom_soft_deps]` in `thunderstore.toml`, learn more about them [here](https://sgg-modding.github.io/Hades2ModWiki/docs/creating-mods/first-mod-guide/mod-template#packagerom_soft_deps).
@@ -115,7 +117,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.1...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.10.0...HEAD
+[0.10.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.1...0.10.0
 [0.9.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.0...0.9.1
 [0.9.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.8.0...0.9.0
 [0.8.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.7.1...0.8.0
