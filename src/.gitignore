@@ -2,6 +2,9 @@
 /src/LICENSE
 /src/icon.png
 /src/manifest.json
+/src/CHANGELOG.md
+/src/README.md
+/src/mm_v2_manifest.json
 
 # For source files used to build packages
 /packages
