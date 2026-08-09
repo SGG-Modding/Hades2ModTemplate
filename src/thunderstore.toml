@@ -18,6 +18,10 @@ SGG_Modding-ReLoad = "1.0.2"
 SGG_Modding-SJSON = "1.0.0"
 SGG_Modding-ModUtil = "4.0.1"
 
+# Uncomment the section to add any soft dependecies.
+# Learn more about them here https://sgg-modding.github.io/Hades2ModWiki/docs/creating-mods/first-mod-guide/mod-template#packagerom_soft_deps
+# [package.rom_soft_deps]
+# AuthorName-ModName = "0.0.0"
 
 [build]
 icon = "./icon.png"
@@ -40,7 +44,6 @@ target = "./plugins"
 # [[build.copy]]
 # source = "./data"
 # target = "./plugins_data"
-
 
 [publish]
 repository = "https://thunderstore.io"
