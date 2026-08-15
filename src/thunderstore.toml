@@ -18,8 +18,8 @@ SGG_Modding-ReLoad = "1.0.2"
 SGG_Modding-SJSON = "1.0.0"
 SGG_Modding-ModUtil = "4.0.1"
 
-# Uncomment the section to add any soft dependecies.
-# Learn more about them here https://sgg-modding.github.io/Hades2ModWiki/docs/creating-mods/first-mod-guide/mod-template#packagerom_soft_deps
+# # Uncomment the section to add any soft dependecies.
+# # Learn more about them here https://sgg-modding.github.io/Hades2ModWiki/docs/creating-mods/first-mod-guide/mod-template#packagerom_soft_deps
 # [package.rom_soft_deps]
 # AuthorName-ModName = "0.0.0"
 
@@ -40,7 +40,7 @@ target = "./LICENSE"
 source = "./src"
 target = "./plugins"
 
-# Uncomment (remove the #) the three lines below if you have any files to copy to the plugins_data folder (like custom .pkg files)
+# # Uncomment (remove the #) the three lines below if you have any files to copy to the plugins_data folder (like custom .pkg files)
 # [[build.copy]]
 # source = "./data"
 # target = "./plugins_data"
