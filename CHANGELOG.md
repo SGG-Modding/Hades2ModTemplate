@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-09-26
+
 ### Added
 
 - Added disclaimer section for AI generated mods in the template Readme, and `thunderstore.toml` tag list.
@@ -121,7 +123,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.10.0...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.11.0...HEAD
+[0.11.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.10.0...0.11.0
 [0.10.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.1...0.10.0
 [0.9.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.0...0.9.1
 [0.9.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.8.0...0.9.0
