@@ -19,7 +19,7 @@ To install the mod, follow these simple steps:
 ## AI Usage Disclaimer - Info
 
 If this mod contains assets or a significant amount of code created by Generative AI, complete the disclosure below and add the `ai-generated` tag to [thunderstore.toml](./thunderstore.toml) under `[publish.categories]`.
-The tag is not required if the only AI-generated content is the README or mod icon.
+The tag is not required when the only AI-generated content is the README or mod icon.
 If this mod contains no AI-generated content, remove this section entirely.
 
 Moderators may add the tag retroactively if they find that a mod contains a significant amount of AI-generated code or assets.
