@@ -11,11 +11,11 @@ websiteUrl = "https://github.com/AuthorName/ModName"
 containsNsfwContent = false
 
 [package.dependencies]
-Hell2Modding-Hell2Modding = "1.0.70"
+Hell2Modding-Hell2Modding = "1.0.112"
 LuaENVY-ENVY = "1.2.0"
-SGG_Modding-Chalk = "2.1.1"
-SGG_Modding-ReLoad = "1.0.2"
-SGG_Modding-SJSON = "1.0.0"
+SGG_Modding-Chalk = "2.1.2"
+SGG_Modding-ReLoad = "1.0.3"
+SGG_Modding-SJSON = "1.0.2"
 SGG_Modding-ModUtil = "4.0.1"
 
 # Uncomment the section to add any soft dependecies.
@@ -49,5 +49,6 @@ target = "./plugins"
 repository = "https://thunderstore.io"
 communities = [ "hades-ii", ]
 
+# Does this mod contain a significant amount of code or assets created by Generative AI? Then please add the "ai-generated" tag to disclose this fact to the category list below
 [publish.categories]
 hades-ii = [ "mods", ]
