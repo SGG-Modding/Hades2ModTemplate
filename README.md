@@ -27,7 +27,7 @@ Many mod-making guides and other knowledge can be found on the [Hades II Mod Wik
     - `description`: short description of your mod (max 250 characters). It will be used by the Thunderstore search, so make sure to include words that people are likely to search for when looking for your mod.
     - `websiteUrl`: your GitHub repository (or website, or Discord server, if you prefer).
     - `[package.dependencies]`: your mod dependencies. Use the `AuthorName-ModName = "X.Y.Z"` format, with `X.Y.Z` being the version you depend on.
-    - `[publish.categories]`: the categories you want your mod to appear under. [See the API](https://thunderstore.io/api/experimental/community/hades-ii/category/) for list of available categories.
+    - `[publish.categories]`: the categories you want your mod to appear under. [See the API](https://thunderstore.io/api/experimental/community/hades-ii/category/) for list of available categories. You **must** add the "ai-generated" tag if your mod contains significant amounts of code or assets created by Generative AI.
 - Push everything to your GitHub repository.
 - From Thunderstore:
   - Go to [**Teams settings**](https://thunderstore.io/settings/teams/) and select your team.
