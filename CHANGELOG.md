@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- The AI disclosure section now has more categories, and we also ask to fill it in even if the tag is not required.
+
 ## [0.11.0] - 2026-09-26
 
 ### Added
