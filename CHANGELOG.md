@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.1] - 2026-09-28
+
 ### Changed
 
 - The AI disclosure section now has more categories, and we also ask to fill it in even if the tag is not required.
@@ -127,7 +129,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First version of the template!
 
-[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.11.0...HEAD
+[unreleased]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.11.1...HEAD
+[0.11.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.11.0...0.11.1
 [0.11.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.10.0...0.11.0
 [0.10.0]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.1...0.10.0
 [0.9.1]: https://github.com/SGG-Modding/Hades2ModTemplate/compare/0.9.0...0.9.1
